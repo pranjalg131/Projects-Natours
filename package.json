@@ -1,0 +1,22 @@
+{
+  "name": "projects-natours",
+  "version": "1.0.0",
+  "description": "Landing page Website with adavanced CSS Layouts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranjalg131/Projects-Natours.git"
+  },
+  "author": "Pranjal Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranjalg131/Projects-Natours/issues"
+  },
+  "homepage": "https://github.com/pranjalg131/Projects-Natours#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
