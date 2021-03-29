@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // Root font sizes are defined in html.
+  // This defines what 1 rem means hence not put in typography.
+}
+
+/* Sitewide font definations are done in body because they can be inherited */
+body {
+  box-sizing: border-box;
+}
