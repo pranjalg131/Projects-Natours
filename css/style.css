@@ -1,5 +1,7 @@
 /* Basic reset using the universal selector */
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
@@ -12,10 +14,8 @@ body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  /*This is for the white border around the entire page*/
   padding: 3rem; }
 
 /*----------------HEADER-------------------------*/
@@ -57,34 +57,6 @@ body {
     letter-spacing: 1.6rem;
     animation-name: moveInRight;
     animation-duration: 1s; }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem); }
-  80% {
-    transform: translate(1rem); }
-  100% {
-    transform: translate(0);
-    opacity: 1; } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translate(10rem); }
-  80% {
-    transform: translate(-1rem); }
-  100% {
-    transform: translate(0);
-    opacity: 1; } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    transform: translateY(0);
-    opacity: 1; } }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -128,3 +100,32 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
+
+/*------------Animations-------------*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem); }
+  80% {
+    transform: translate(1rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(10rem); }
+  80% {
+    transform: translate(-1rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }

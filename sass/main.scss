@@ -1,3 +1,4 @@
+// Color variables.
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
@@ -7,14 +8,16 @@ $color-white: #fff;
 $color-black: #000;
 
 /* Basic reset using the universal selector */
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // Root font sizes are defined in html.
 }
 
 /* Sitewide font definations are done in body because they can be inherited */
@@ -22,11 +25,9 @@ body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
-  /*This is for the white border around the entire page*/
-  padding: 3rem;
+  padding: 3rem; // This padding is for the border around the entire page.
 }
 
 /*----------------HEADER-------------------------*/
@@ -87,45 +88,6 @@ body {
   }
 }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem);
-  }
-  80% {
-    transform: translate(1rem);
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translate(10rem);
-  }
-  80% {
-    transform: translate(-1rem);
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .btn {
   &:link,
   &:visited {
@@ -179,5 +141,45 @@ body {
     left: 0;
     z-index: -1;
     transition: all 0.4s;
+  }
+}
+
+/*------------Animations-------------*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(1rem);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+  80% {
+    transform: translate(-1rem);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
