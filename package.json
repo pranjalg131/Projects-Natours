@@ -18,5 +18,8 @@
   "homepage": "https://github.com/pranjalg131/Projects-Natours#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "hosted-git-info": "^4.0.2"
   }
 }
